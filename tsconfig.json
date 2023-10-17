@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "ES2022",
+    "outDir": "dist",
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true
+  },
+  "include": ["src", "environment.d.ts"],
+  "exclude": ["node_modules"]
+}

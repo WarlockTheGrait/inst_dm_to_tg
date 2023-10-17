@@ -1,0 +1,50 @@
+{
+  "name": "reels_to_th",
+  "version": "1.0.0",
+  "description": "Direct to tg resender",
+  "main": "dist/bot.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bot.js",
+    "dev": "env-cmd ts-node-dev src/bot.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "bot",
+    "unicode",
+    "social-media",
+    "bots",
+    "telegram",
+    "serverless",
+    "telegram-bot",
+    "chatbot",
+    "text-effects"
+  ],
+  "author": "malyutin.fm",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/lodash": "^4.14.188",
+    "@types/node": "^18.11.7",
+    "@types/node-fetch": "^2.6.2",
+    "env-cmd": "^10.1.0",
+    "instagram_mqtt": "^1.2.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "callback-data": "^1.1.1",
+    "express": "^4.18.2",
+    "grammy": "^1.11.2",
+    "instagram_mqtt": "^1.2.2",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "npm": "^10.2.0",
+    "reflect-metadata": "^0.1.13",
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.6",
+    "typeorm": "^0.3.17"
+  }
+}
