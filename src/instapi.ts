@@ -106,7 +106,8 @@ export const getThreads = async (tgId: number): Promise<ThreadDTO[]> => {
     let threads = (ig.feed.directInbox().items());
     const thisUserId = thisUser.instId
 
-    const answerThreads = (await threads).reverse()
+    const threadsReal = (await threads)
+    const answerThreads = threadsReal.reverse()
         .map((thread) => {
             return ThreadDTO.fromThreadObject(thread, thisUserId)
         })

@@ -319,8 +319,8 @@ export class ThreadDTO {
     }
 
     static getThreadSeenByUser(thread: DirectInboxFeedResponseThreadsItem | DirectThreadFeedResponseThread, thisUserId: number): number {
-        const last_seen_at = Number(thread.last_seen_at[thisUserId]['timestamp'])
-        return last_seen_at ?? 0
+        const last_seen_at = (thread.last_seen_at[thisUserId] ?? {})['timestamp'] ?? "0"
+        return Number(last_seen_at)
     }
 }
 

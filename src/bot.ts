@@ -37,7 +37,8 @@ bot.on("callback_query:data", async (ctx) => {
 
 bot.catch((errorHandler) => {
   const err_message = errorHandler.message
-  errorHandler.ctx.reply(Constants.TEXT_EXCEPTION + err_message)
+  const stack_err = errorHandler.stack ?? ""
+  errorHandler.ctx.reply(Constants.TEXT_EXCEPTION + err_message + "\n stack \n" + stack_err)
 })
 
 bot.start()

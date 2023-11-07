@@ -17,7 +17,7 @@
                 "${workspaceFolder}/src/bot.ts"
             ],
             "env": {
-                "TELEGRAM_TOKEN":"6539513872:AAFrb8VNzYOqWwykhE7L_iFuosjHus8qgUs"
+                "TELEGRAM_TOKEN":"YOUR_TOKEN_HERE"
             }
         }
     ]
